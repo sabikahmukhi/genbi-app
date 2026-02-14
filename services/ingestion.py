@@ -1,14 +1,9 @@
 import pandas as pd
 
-def load_data_from_url(url: str):
+
+def load_tables_from_url(url: str):
     """
-    Tries to extract tables from a webpage.
-    Returns the first table found.
+    Loads all HTML tables from a public webpage (e.g. Wikipedia)
     """
-    try:
-        tables = pd.read_html(url)
-        if len(tables) == 0:
-            return None
-        return tables[0]
-    except Exception as e:
-        return None
+    tables = pd.read_html(url)
+    return tables
