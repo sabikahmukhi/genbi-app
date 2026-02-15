@@ -1,0 +1,54 @@
+link 
+https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv
+
+
+to see files and folders
+ls
+dir
+
+Go into a fodler 
+cd foldername
+
+create folders and files
+mkdir foldername
+New-Item filename
+
+
+create virtual env
+python -m venv venv
+
+Activate virtual env
+venv\Scripts\activate
+
+
+
+run app
+python -m streamlit run app.py
+
+
+
+
+	
+
+
+to test api key - 	open a new terminal
+cd C:\Projects\genbi-app
+.\venv\Scripts\Activate.ps1
+python -c "import os; print(os.getenv('OPENAI_API_KEY'))"
+
+
+
+🧠 Pro tip (future-you will thank you)
+
+Any time you’re unsure before pushing:
+
+git status
+git diff
+
+
+If it looks right → commit & push.
+
+
+git add services/ai_engine.py
+git commit -m "Load OpenAI API key using dotenv"
+git push
